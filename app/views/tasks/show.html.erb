@@ -1,0 +1,14 @@
+<h1>My To Do's details</h1>
+<ul>
+  <li>Title: <%= @task.title %></li>
+  <li>Details: <%= @task.details %></li>
+  <li>Status: <%= "Done" if @task.completed == true %></li>
+</ul>
+
+<div>
+  <%= link_to "Update tasks", task_edit_path%>
+</div>
+<br>
+<div>
+  <%= link_to "Back to list", tasks_path %>
+</div>
